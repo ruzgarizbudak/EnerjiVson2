@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__text">
+          <h1 class="x">NASILDIK!</h1>
+          <p class="q">Bizi değerlendir</p>
+        </div>
+      </header>
+      <main>
+        {% block content %}
+        <form action="{{ url_for('submit_form') }}" method="post" class="form"></form>
+          <div class="user">
+            <ul class="user-info">
+                <li class="user-info__item">
+    
+                    <label for="ad">Sizin adınız</label>
+                    <input type="text" name="ad" id="ad" placeholder="Tam adınızı girin" required>
+                </li>
+                <li class="user-info__item">
+                  <label for="not">Bize bırkmak istediniz not var mı</label>
+                  <input type="text" name="not" id="not" placeholder="not bırakınız" required>
+                    
+                </li>
+            </ul>
+            <ul class="puan">
+                <li class="user-info__item">
+    
+                    <label for="puan">Bizi değerlendiriniz</label>
+                    <input type="number" name="puan" id="puan" placeholder="Puanınız" required>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <a href='/son' class="www">BİTTİ!</a>
+        
+        </form>
+        {% endblock %}
+      </main>
+      <footer>
+    
+      </footer>
+</body>
+</html>

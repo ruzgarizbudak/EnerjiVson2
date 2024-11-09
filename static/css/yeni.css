@@ -1,0 +1,45 @@
+body{
+    color: rgb(65, 146, 82);
+}
+
+
+
+span{
+    font-size: 17px;
+
+}
+
+@keyframes yazi{
+    0%{
+        background-color: #6a0505;
+    }
+    100%{
+        background-color: #7f3f00;
+    }
+}
+
+.main__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 300px;
+    border-radius: 20px;
+    
+    animation: yazi 5s infinite;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+.qq{
+    color: aqua;
+    text-align: center;
+}
+
+.x{
+    color: blue;
+}
+
+
+body {
+    background: linear-gradient(to right, #0c0b0b, #31302f);
+}
